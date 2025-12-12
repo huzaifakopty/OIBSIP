@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Huzaifa Kopty — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-grid">
+      <div class="brand">
+        <img src='photo.jpg' alt='Huzaifa' class='profile-photo' />
+        <div>
+          <h1>Huzaifa <span class='muted'>Kopty</span></h1>
+          <p class='role'>Student • Frontend Web Developer</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h2>Hello — I’m <span class='accent'>Huzaifa</span></h2>
+          <p class="lead">Student learning frontend development. I build clean, responsive websites using HTML & CSS and am learning JavaScript and React.</p>
+          <div class="cta-row">
+            <a href="#projects" class="btn">View Project</a>
+            <a href="#contact" class="btn ghost">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="profile-pic" aria-hidden="true">HK</div>
+          <div class="profile-info">
+            <h3>Quick facts</h3>
+            <ul>
+              <li>Student — Jai Hind College</li>
+              <li>Skills: HTML · CSS · JavaScript</li>
+              <li>Interested in UI / Frontend</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <h2 class="section-title">About me</h2>
+        <p class="center">
+          I’m a student focusing on frontend web development. I enjoy turning simple ideas into usable web pages.
+          Currently building small projects to improve HTML/CSS skills and learning practical JavaScript.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt">
+      <div class="wrap">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <span class="skill">HTML5</span>
+          <span class="skill">CSS3</span>
+          <span class="skill">Responsive Design</span>
+          <span class="skill">JavaScript (learning)</span>
+          <span class="skill">React (basic)</span>
+          <span class="skill">Git & GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2 class="section-title">Project — NeighbourCart</h2>
+
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-head">
+              <h3>NeighbourCart</h3>
+              <p class="project-sub">Community shopping platform</p>
+            </div>
+            <p>
+              NeighbourCart is a web project that helps neighbours buy and sell everyday items locally.
+              Focus: clear listings, simple UI, and community convenience.
+            </p>
+            <ul class="meta">
+              <li>Role: Frontend</li>
+              <li>Stack: HTML · CSS · (JS optional)</li>
+            </ul>
+            <div class="project-links">
+              <a href="neighbourcart.html" class="link" target="_blank">Open NeighbourCart</a>
+              <a href="#contact" class="link">Get in touch</a>
+            </div>
+          </article>
+
+          <article class="project small">
+            <h4>Payments App</h4>
+            <p>Small practice app to simulate payment flows and input handling.</p>
+            <div class="meta">HTML · CSS · JS (practice)</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="wrap">
+        <h2 class="section-title">Contact</h2>
+        <p class="center">For internship queries, project collaboration or feedback — reach out below.</p>
+
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <input type="text" placeholder="Your name" required />
+            <input type="email" placeholder="Your email" required />
+          </div>
+          <textarea placeholder="Your message" rows="5" required></textarea>
+          <div class="form-actions">
+            <button class="btn">Send message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <p>© 2025 Huzaifa Kopty</p>
+      <p class="muted">Built with HTML & CSS • Student work</p>
+    </div>
+  </footer>
+</body>
+</html>

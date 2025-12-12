@@ -1,0 +1,110 @@
+/* Layout & base */
+:root{
+  --accent:#2563eb;
+  --muted:#6b7280;
+  --bg:#f7f9fc;
+  --card:#ffffff;
+  --radius:12px;
+  --glass: rgba(255,255,255,0.6);
+  --shadow: 0 10px 25px rgba(16,24,40,0.08);
+  --max:1100px;
+  --pad:20px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#0f172a;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+}
+
+/* wrapper */
+.wrap{
+  width:90%;
+  max-width:var(--max);
+  margin:0 auto;
+}
+
+/* header */
+.site-header{background:#071133;padding:18px 0;box-shadow:0 2px 6px rgba(2,6,23,0.15)}
+.header-grid{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;gap:14px;align-items:center}
+.avatar, .profile-pic{
+  width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#2563eb,#7c3aed);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:var(--shadow)
+}
+.profile-photo{width:64px;height:64px;border-radius:8px;object-fit:cover;display:block;box-shadow:var(--shadow)}
+.brand h1{color:white;font-size:20px;margin:0}
+.brand .muted{color:#93c5fd;font-weight:600}
+.role{color:#dbeafe;font-size:13px;margin-top:3px}
+
+/* nav */
+.nav a{color:#dbeafe;margin-left:18px;text-decoration:none;font-weight:600;font-size:14px}
+.nav a.btn{background:#fff;color:#071133;padding:8px 12px;border-radius:8px}
+.nav a.small{padding:6px 10px;font-size:13px}
+.nav a:hover{opacity:0.95}
+
+/* hero */
+.hero{padding:72px 0;background:linear-gradient(135deg,#0b69f0,#1e3a8a);color:white}
+.hero-grid{display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:center}
+.hero h2{font-size:32px;margin:0 0 8px}
+.hero .accent{color:#ffd166}
+.lead{color:rgba(255,255,255,0.92);max-width:520px}
+.cta-row{margin-top:18px}
+.btn{display:inline-block;background:var(--card);color:#071133;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700;margin-right:10px;box-shadow:0 6px 18px rgba(12,23,52,0.12)}
+.btn.ghost{background:transparent;color:rgba(255,255,255,0.95);border:1px solid rgba(255,255,255,0.06)}
+
+/* hero card */
+.hero-card{background:var(--card);padding:18px;border-radius:14px;box-shadow:var(--shadow)}
+.profile-info h3{margin:0 0 8px;color:var(--accent)}
+.profile-info ul{list-style:none;padding:0;margin:0;color:var(--muted)}
+.profile-info li{margin:6px 0;font-size:14px;color:#334155}
+
+/* sections */
+.section{padding:64px 0}
+.section-title{font-size:24px;margin-bottom:12px;color:#0f172a;text-align:center}
+.center{text-align:center}
+.alt{background:transparent}
+
+/* skills */
+.skills-grid{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.skill{background:linear-gradient(135deg,#2563eb,#7c3aed);color:white;padding:10px 18px;border-radius:999px;font-weight:700;box-shadow:0 8px 20px rgba(37,99,235,0.14)}
+
+/* projects */
+.project-grid{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start}
+.project{background:var(--card);padding:20px;border-radius:12px;box-shadow:var(--shadow)}
+.project.small{padding:14px}
+.project h3{color:var(--accent);margin-top:0}
+.project .meta{color:var(--muted);margin-top:10px}
+
+/* links */
+.link{display:inline-block;margin-top:12px;color:var(--accent);text-decoration:none;font-weight:700}
+
+/* contact form */
+.contact-form{max-width:760px;margin:18px auto 0}
+.form-row{display:flex;gap:12px}
+.contact-form input,.contact-form textarea{
+  width:100%;padding:12px;border-radius:8px;border:1px solid #e6eef9;background:white;font-size:14px
+}
+.form-actions{display:flex;gap:12px;align-items:center;margin-top:10px}
+
+/* footer */
+.site-footer{padding:18px 0;background:#071133;color:#cfe3ff}
+.footer-grid{display:flex;justify-content:space-between;align-items:center}
+
+/* responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr}
+  .project-grid{grid-template-columns:1fr}
+  .header-grid{flex-direction:column;align-items:flex-start;gap:12px}
+  .nav{display:flex;gap:8px;flex-wrap:wrap}
+  .form-row{flex-direction:column}
+}
+@media (max-width:480px){
+  .avatar{width:48px;height:48px;font-size:16px}
+  .hero{padding:48px 0}
+  .hero h2{font-size:22px}
+}
